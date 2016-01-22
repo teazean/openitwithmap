@@ -6,6 +6,6 @@ window.addEventListener("load", function() {
 	}, function(tabs) {
 		var url = tabs[0].url;
 		document.querySelector("#qr").src = _url + encodeURIComponent(url);
-		document.querySelector("#mapqr").src = _url + encodeURIComponent('baidumap://map/cost_share?url=' + encodeURIComponent(url));
+		document.querySelector("#mapqr").src = _url + encodeURIComponent('baidumap://map/cost_share?needLocation=yes&url=' + encodeURIComponent(url));
 	});
 });
